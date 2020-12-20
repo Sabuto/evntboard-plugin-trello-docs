@@ -25,6 +25,8 @@ Allows you to add a card to a list on a board
 | name | string | :heavy_check_mark: | none | The name of the card |
 | desc | string | :heavy_check_mark: | none | The description to put in the card |
 
+this will fire the event ```trello-plugin-addCard``` with either a success of failed object response
+
 ```
 module.exports = async (data, services) => {
   await services.plugin('trello', 'addCard', 'Board Name', 'list name', 'Name for the card', 'Description for the card')
